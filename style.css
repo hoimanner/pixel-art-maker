@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Retro Gaming';
+    src: url('Retro Gaming.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Retro Gaming', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.logo {
+    margin: 20px;
+    width: 300px;
+    height: auto;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(16, 20px);
+    grid-template-rows: repeat(16, 20px);
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#clearButton, #eraserButton, #sizeSelector {
+    padding: 8px, 15px;
+    background-color: #ff5e57;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Retro Gaming', Arial, sans-serif;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+#clearButton:hover, #eraserButton:hover, #sizeSelector:hover {
+    background-color: #ff3c3c;
+    transform: translateY(-2px);
+}
+
+#eraserButton {
+    background-color: #4caf50;
+}
+
+#eraserButton:hover {
+    background-color: #43a047;
+    transform: translateY(-2px);
+}
+
+#eraserButton:active {
+    background-color: #388e3c;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(16, 20px);
+    grid-template-rows: repeat(16, 20px);
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+}
